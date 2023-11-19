@@ -54,12 +54,12 @@ curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py" -o udp_client3.py
 :: Download StartMonitoring.bat file to root directory from Github
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat" -o StartMonitoring.bat
-:: Download udp.py file to settings directory from Github
-curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp.py" -o ./settings/udp.py
 :: Create readme.md file in root directory
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/readme.md" -o readme.md
 
-xcopy ..\password.py .\settings
+:: Copy udp.py file into settings directory - this file includes email app password and sender email address
+
+xcopy ..\udp.py .\settings
 
 pause
 ::copy python_functions.py Templates
