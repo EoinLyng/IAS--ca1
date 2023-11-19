@@ -2,14 +2,14 @@
 
 ## Project Overview ##
 
-## Part 1 ##
+### Part 1 ###
 
 1. Write a batch file/script in Linux or DOS (your choice!) to automate creating this structure.
 2. Create a readme.md file which explains the project.
 3. Build a main.py programme in the project root.
 4. Complete the log analysis project described on the following page.
 
-## Part 2 ##
+### Part 2 ###
 
 *A farmer needs help!*
 
