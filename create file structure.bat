@@ -61,7 +61,6 @@ curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://
 
 xcopy ..\udp.py .\settings
 
-pause
 ::copy python_functions.py Templates
 #del python_functions.py
 cls
