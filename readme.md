@@ -31,29 +31,30 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 #### Part 1 methodology ### 
 
-- I created a batch file "create file structure.bat" to automatically build the structure as outlined in the CA
-- When run this batch file prompts the user to type a name for the project which then creates a folder with this name containing the necessary files.
-- It also downloads the python files created later for part 2 from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CA.
+- A batch file "create file structure.bat" was created to automatically build the structure as outlined in the CA
+- When run this batch file prompts the user to type a name for the project which then creates a folder with this name creating the folder structure.
+- It also downloads the python files created later for part 2 from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CAm and other online sources.
 - These files are placed in the correct directories in the project folder.
 
 
 #### Part 2 methodology ### 
 
-- I created a [Github repository](https://github.com/EoinLyng/IAS--ca1)  to store the completed python scripts for download to project by batch file.
+- A [Github repository](https://github.com/EoinLyng/IAS--ca1) was created  to store the completed python scripts for download to project by batch file.
 - Created a server script to listen for temperature data from the client sensors  [udp_server.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_server.py)
 - Created a client script to send temperature data for client sensor 1 [udp_client1.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client1.py)
 
 - Created a client script to send temperature data for client sensor 1 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
 - Created a client script to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
-- Created a udp script to send network data to the other scripts in the settings directory [udp.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp.py)
+- Created a udp script to send network data to the other scripts in the settings directory  and also containing the email details and passwords required later.[udp.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp.py)
 - Created a main script to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
-- Created a batch file to run main.py when batch file is executed [StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
+- Created a batch file to begin simulating the temperature monitoring from the three sensors[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
 
 #### Creating Project from Batch file ### 
 1. Run batch file 'create file structure.bat'.
-2. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) 
-3. Change recipient email address receiver@gmail.com in udp_server.py to a valid email address for farmer making sure to save the file.
+2. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and copies udp.py to settings folder.
+3. Change recipient email address in settings/udp.py from receiver@gmail.com to a valid email address for farmer **making sure to save the file**.
 4. Run 'StartMonitoring.bat' to run main.py and thereby run all other scripts.
-5. Monitoring now begins, the output of the 3 loggers is stored in the data directory in 3 files Sensor_One_Output.txt, Sensor_Two_Output.txt, Sensor_Three_Output.txt.
-6. When reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com)
-7. When reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com)
+5. SensorOne is set to simulate data randomly from a list containg numbers from -5 to 35 and also letters a,b,c,d to simulate errors in the readings.The other two sensors randomly select data from a range between -5 and 35.
+5. Monitoring begins after running StarMonitoring.bat, the output of the 3 loggers is stored in the data directory in 3 files Sensor_One_Output.log, Sensor_Two_Output.log, Sensor_Three_Output.log and erro logs are stored in error.log in error directory.
+6. When reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
+7. When reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
