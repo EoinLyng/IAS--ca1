@@ -1,6 +1,6 @@
-### College Assignment 1 ###
+# College Assignment 1 #
 
-# Project Overview #
+### Project Overview ###
 
 ## Part 1 ##
 
