@@ -34,6 +34,7 @@ mkdir Examples
 mkdir Source
 mkdir settings
 mkdir data
+mkdir error
 
 :: Create main.py file in root directory
 
