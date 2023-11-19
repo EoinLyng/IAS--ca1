@@ -55,6 +55,6 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 3. Change recipient email address in settings/udp.py from receiver@gmail.com to a valid email address for farmer **making sure to save the file**.
 4. Run 'StartMonitoring.bat' to run main.py and thereby run all other scripts.
 5. SensorOne is set to simulate data randomly from a list containg numbers from -5 to 35 and also letters a,b,c,d to simulate errors in the readings.The other two sensors randomly select data from a range between -5 and 35.
-5. Monitoring begins after running StarMonitoring.bat, the output of the 3 loggers is stored in the data directory in 3 files Sensor_One_Output.log, Sensor_Two_Output.log, Sensor_Three_Output.log and erro logs are stored in error.log in error directory.
-6. When reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
-7. When reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
+5. Monitoring begins after running StarMonitoring.bat, the output of the 3 loggers is stored in the data directory in three - files Sensor_One_Output.log, Sensor_Two_Output.log, Sensor_Three_Output.log and error logs are stored in error.log in error directory.
+6. When sensor temperature reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
+7. When  sensor temperature reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receiver@gmail.com).
