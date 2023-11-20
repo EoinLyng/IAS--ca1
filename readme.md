@@ -45,7 +45,7 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 - Created a client script to send temperature data for client sensor 1 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
 - Created a client script to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
-- Created a udp script to send network data to the other scripts in the settings directory  and also containing the email details and passwords required later.[udp.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp.py)
+- Created a udp (udp.py not included in Github repository for security reasons) script to send network data to the other scripts in the settings directory  and also containing the email details and passwords required later for email notifications.
 - Created a main script to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
 - Created a batch file to begin simulating the temperature monitoring from the three sensors[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
 
