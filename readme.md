@@ -31,9 +31,9 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 #### Part 1 methodology ### 
 
-- A batch file "create file structure.bat" was created to automatically build the structure as outlined in the CA
+- A batch file "create file structure.bat" was created to automatically build the structure as outlined in the CA1
 - When run this batch file prompts the user to type a name for the project which then creates a folder with this name creating the folder structure.
-- It also downloads the python files created later for part 2 from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CAm and other online sources.
+- It also downloads the python files created later for part 2 from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CA1 and other online sources.
 - These files are placed in the correct directories in the project folder.
 
 
