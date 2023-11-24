@@ -48,7 +48,7 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 - A batch file file was created to begin simulating the temperature monitoring from the three sensors, to start the server monitoring process and to send email notifications in the event of temperatures below 5 degrees or above 30 degrees.[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
 
 #### Creating Project from Batch file ### 
-1. Please ensure the latest version of Python is installed [Python.org Downloads](https://www.python.org/downloads/)
+1. Please ensure the latest version of Python is installed  prior to begining.[Python.org Downloads](https://www.python.org/downloads/)
 2. Download the uploaded CA1.zip from Blackboard Assignment 1. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA. These files should download from a Github repository, however I have included them incase this download fails to show the working files.
 3. Unzip CA1.zip and browse to this directory.
 4. Run batch file 'create file structure.bat'.
