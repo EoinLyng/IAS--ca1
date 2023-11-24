@@ -39,18 +39,17 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 #### Part 2 methodology ### 
 - A [Github repository](https://github.com/EoinLyng/IAS--ca1) was created  to store the completed python scripts for download to project by batch file.
-- A [Github repository](https://github.com/EoinLyng/IAS--ca1) was created  to store the completed python scripts for download to project by batch file.
-- Created a server script to listen for temperature data from the client sensors  [udp_server.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_server.py)
-- Created a client script to send temperature data for client sensor 1 [udp_client1.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client1.py)
-- Created a client script to send temperature data for client sensor 1 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
-- Created a client script to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
-- Created a udp (udp.py not included in Github repository for security reasons) script to send network data to the other scripts in the settings directory  and also containing the email details and passwords required later for email notifications.
-- Created a main script to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
-- Created a batch file to begin simulating the temperature monitoring from the three sensors[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
+- A server script was created to listen for temperature data from the client sensors  [udp_server.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_server.py)
+- A client script was created to send temperature data for client sensor 1 [udp_client1.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client1.py)
+- A client script was created send temperature data for client sensor 1 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
+- A client script was created to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
+- A settings file was created (udp.py not included in Github repository for security reasons) to provide network data to the other scripts in the settings directory  and also containing the email details and passwords required later for email notifications.
+- A main script was created to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
+- A batch file file was created to begin simulating the temperature monitoring from the three sensors and to start the server monitoring process.[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
 
 #### Creating Project from Batch file ### 
 1. Please ensure the latest version of Python is installed [Python.org Downloads](https://www.python.org/downloads/)
-2. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA. These files should download from a Github repository, however I have included them in case this download fails.
+2. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA. These files should download from a Github repository, however I have included them incase this download fails to show the working files.
 3. Run batch file 'create file structure.bat'.
 4. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and copies udp.py to settings folder.
 5. Change recipient email address in settings/udp.py from receipient@gmail.com to a valid email address for farmer to receive email notifications **making sure to save the file**.
