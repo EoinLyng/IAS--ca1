@@ -52,7 +52,7 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 2. Download the uploaded CA1.zip from Blackboard Assignment 1. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA1. These files should download from a Github repository, however I have included them incase this download fails to show the working files.
 3. Unzip CA1.zip and browse to this directory.
 4. Run batch file 'create file structure.bat'.
-5. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and other online sources. It also copies upd.py from the folder copies ,the unzipped, udp.py to  the settings folder.
+5. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and other online sources. It also copies,the unzipped, udp.py to the settings folder.
 6. Change recipient email address in settings/udp.py from receipient@gmail.com to a valid email address for farmer to receive email notifications **making sure to save the file**.
 7. Run 'StartMonitoring.bat' to run main.py and thereby run all other scripts.
 8. SensorOne is set to simulate data randomly from a list containing numbers from -5 to 35 and also letters a,b,c,d to simulate errors in the readings.The other two sensors randomly select data from a range between -5 and 35.
