@@ -38,11 +38,11 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 
 #### Part 2 methodology ### 
-- A [Github repository](https://github.com/EoinLyng/IAS--ca1) was created  to store the completed python scripts for download to project by batch file.
+- A [Github repository](https://github.com/EoinLyng/IAS--ca1) was created  to store the completed python scripts.
 - A server script was created to listen for temperature data from the client sensors  [udp_server.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_server.py)
 - A client script was created to send temperature data for client sensor 1 [udp_client1.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client1.py)
-- A client script was created send temperature data for client sensor 1 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
-- A client script was created to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
+- A client script was created send temperature data for client sensor 2 [udp_client2.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client2.py)
+- A client script was created to send temperature data for client sensor 3 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
 - A settings file was created (udp.py not included in Github repository for security reasons) to provide network data to the other scripts in the settings directory  and also containing the email details and passwords required later for email notifications.
 - A main script was created to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
 - A batch file file was created to begin simulating the temperature monitoring from the three sensors, to start the server monitoring process and to send email notifications in the event of temperatures below 5 degrees or above 30 degrees.[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
