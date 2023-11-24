@@ -49,7 +49,7 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 #### Creating Project from Batch file ### 
 1. Please ensure the latest version of Python is installed  prior to begining.[Python.org Downloads](https://www.python.org/downloads/)
-2. Download the uploaded CA1.zip from Blackboard Assignment 1. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA. These files should download from a Github repository, however I have included them incase this download fails to show the working files.
+2. Download the uploaded CA1.zip from Blackboard Assignment 1. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA1. These files should download from a Github repository, however I have included them incase this download fails to show the working files.
 3. Unzip CA1.zip and browse to this directory.
 4. Run batch file 'create file structure.bat'.
 5. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and other online sources. It also copies upd.py from the folder copies ,the unzipped, udp.py to  the settings folder.
