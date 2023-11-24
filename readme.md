@@ -45,7 +45,7 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 - A client script was created to send temperature data for client sensor 1 [udp_client3.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/udp_client3.py)
 - A settings file was created (udp.py not included in Github repository for security reasons) to provide network data to the other scripts in the settings directory  and also containing the email details and passwords required later for email notifications.
 - A main script was created to run other scripts simultaneously [main.py](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/main.py)
-- A batch file file was created to begin simulating the temperature monitoring from the three sensors and to start the server monitoring process.[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
+- A batch file file was created to begin simulating the temperature monitoring from the three sensors, to start the server monitoring process and to send email notifications in the event of temperatures below 5 degrees or above 30 degrees.[StartMonitoring.bat](https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat)
 
 #### Creating Project from Batch file ### 
 1. Please ensure the latest version of Python is installed [Python.org Downloads](https://www.python.org/downloads/)
