@@ -32,8 +32,8 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 #### Part 1 methodology ### 
 
 - A batch file "create file structure.bat" was created to automatically build the structure as outlined in the CA1
-- When run this batch file prompts the user to type a name for the project which then creates a folder with this name creating the folder structure.
-- It also downloads the python files created later for part 2 from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CA1 and other online sources.
+- When run this batch file prompts the user to type a name for the project which then creates a directory with this name and then completes the build of the directory structure.
+- It also downloads the python files ,created later for part 2, from a [Github repository](https://github.com/EoinLyng/IAS--ca1) created for this CA1 and additional files from other online sources.
 - These files are placed in the correct directories in the project folder.
 
 
@@ -50,11 +50,12 @@ It would be a real bonus if we can alert the farmer when temperature is <5c or >
 
 #### Creating Project from Batch file ### 
 1. Please ensure the latest version of Python is installed [Python.org Downloads](https://www.python.org/downloads/)
-2. Run batch file 'create file structure.bat'.
-3. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and copies udp.py to settings folder.
-4. Change recipient email address in settings/udp.py from receipient@gmail.com to a valid email address for farmer to receive email notifications **making sure to save the file**.
-5. Run 'StartMonitoring.bat' to run main.py and thereby run all other scripts.
-6. SensorOne is set to simulate data randomly from a list containing numbers from -5 to 35 and also letters a,b,c,d to simulate errors in the readings.The other two sensors randomly select data from a range between -5 and 35.
-7. Monitoring begins after running StarMonitoring.bat, the output of the 3 loggers is stored in the data directory in three - files Sensor_One_Output.log, Sensor_Two_Output.log, Sensor_Three_Output.log and error logs are stored in error.log in error directory.
-8. When sensor temperature reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receipient@gmail.com).
-9. When  sensor temperature reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receipient@gmail.com).
+2. In CA1.zip you will files 4 files , create file structure.bat, readme.md, udp.py and a zip file ,Projectfiles.zip, containing all other fies for CA. These files should download from a Github repository, however I have included them in case this download fails.
+3. Run batch file 'create file structure.bat'.
+4. This creates the file structure and also downloads the relevant files from the [Github repository](https://github.com/EoinLyng/IAS--ca1) and copies udp.py to settings folder.
+5. Change recipient email address in settings/udp.py from receipient@gmail.com to a valid email address for farmer to receive email notifications **making sure to save the file**.
+6. Run 'StartMonitoring.bat' to run main.py and thereby run all other scripts.
+7. SensorOne is set to simulate data randomly from a list containing numbers from -5 to 35 and also letters a,b,c,d to simulate errors in the readings.The other two sensors randomly select data from a range between -5 and 35.
+8. Monitoring begins after running StarMonitoring.bat, the output of the 3 loggers is stored in the data directory in three - files Sensor_One_Output.log, Sensor_Two_Output.log, Sensor_Three_Output.log and error logs are stored in error.log in error directory.
+9. When sensor temperature reading goes below 5 degrees celsius an email is sent to the farmers email address (formerly receipient@gmail.com).
+10. When  sensor temperature reading goes above 30 degrees celsius an email is sent to the farmers email address (formerly receipient@gmail.com).
