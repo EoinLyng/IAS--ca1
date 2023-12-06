@@ -35,6 +35,7 @@ mkdir Source
 mkdir settings
 mkdir data
 mkdir error
+mkdir docs
 
 :: Create main.py file in root directory
 
@@ -57,6 +58,7 @@ curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/StartMonitoring.bat" -o StartMonitoring.bat
 :: Create readme.md file in root directory
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/readme.md" -o readme.md
+curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/EoinLyng/IAS--ca1/main/status.md" -o ./docs/status.md
 
 :: Copy udp.py file into settings directory - this file includes email app password and sender email address
 
